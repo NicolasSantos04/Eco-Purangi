@@ -1,0 +1,1 @@
+Este repositório contém um projeto simples de site desenvolvido com HTML e CSS como parte de um trabalho acadêmico. O objetivo é demonstrar habilidades básicas de construção de páginas web e estilização usando tecnologias modernas e práticas recomendadas.

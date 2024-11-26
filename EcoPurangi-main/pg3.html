@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha uma opção</title> <!-- Título da página, exibido na aba do navegador -->
+
+    <style>
+        /* Estilo para o botão "I have an account" */
+        .iaccount {
+            padding: 15px 60px;
+            border: none;
+            border-radius: 25px;
+            background-color: brown;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 10px;
+            /* Espaçamento entre os botões */
+        }
+
+        /* Estilo para o botão "Create an account" */
+        .create {
+            padding: 15px 60px;
+            border: 2px solid brown;
+            border-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            color: brown;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 10px;
+            /* Espaçamento entre os botões */
+        }
+
+        /* Efeito hover para o botão "I have an account" */
+        .iaccount:hover {
+            transform: scale(1.05);
+            /* Aumenta ligeiramente o tamanho do botão */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            /* Aumenta a sombra */
+            background-color: rgb(138, 36, 36);
+            /* Muda a cor de fundo */
+        }
+
+        /* Efeito hover para o botão "Create an account" */
+        .create:hover {
+            transform: scale(1.05);
+            /* Aumenta ligeiramente o tamanho do botão */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            /* Aumenta a sombra */
+            background-color: rgb(240, 240, 240);
+            /* Muda a cor de fundo para um tom claro */
+        }
+
+        /* Estilo para o container dos botões */
+        .botao-container {
+            display: flex;
+            flex-direction: column;
+            /* Alinha os botões em coluna */
+            align-items: center;
+            /* Centraliza os botões horizontalmente */
+            justify-content: center;
+            /* Centraliza os botões verticalmente */
+            height: 100vh;
+            /* Define altura do container para 100% da janela */
+            margin-left: 300px;
+            /* Move os botões um pouco para a direita */
+        }
+
+        /* Estilo básico para o corpo e HTML */
+        body,
+        html {
+            height: 100%;
+            /* Define altura do corpo e do HTML para 100% da janela */
+            margin: 0;
+            /* Remove margens padrão */
+            font-family: Arial, sans-serif;
+            /* Define a fonte da página */
+        }
+
+        .back2 a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header></header> <!-- Cabeçalho vazio, pode ser preenchido futuramente -->
+
+    <main>
+        <section class="botao-container"> <!-- Seção contendo os botões principais -->
+            <button type="button" class="iaccount">I have an account</button> <!-- Botão "I have an account" -->
+            <button type="button" class="create">Create an account</button> <!-- Botão "Create an account" -->
+        </section>
+    </main>
+
+    <footer class="back2">
+        <a href="" target="_blank" rel="prev">← back</a> <!-- Link para voltar, abre em uma nova aba -->
+    </footer>
+
+</body>
+
+</html>

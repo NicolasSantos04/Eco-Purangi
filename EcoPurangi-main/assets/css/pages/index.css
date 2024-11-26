@@ -1,0 +1,45 @@
+@import './partials/logo.css';
+@import './partials/navbar.css';
+@import './partials/header.css';
+@import './partials/main-content.css';
+
+body {
+    margin: 0;
+    background-color: #fff8f1;
+}
+
+  /* Estilos para o botão com classe .join */
+
+
+  .join {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: underline;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.join:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(138, 36, 36);
+}
+  
+
+/* Estilos para links dentro do botão .join */
+.join a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

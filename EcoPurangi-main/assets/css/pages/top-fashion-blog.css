@@ -1,0 +1,60 @@
+@import '../pages/partials/logo.css';
+@import '../pages/partials/navbar.css';
+@import '../pages/partials/header.css';
+
+@font-face {
+    font-family: 'ChauPhilomene';
+    src: url(../../fonts/ChauPhilomeneOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url(../../fonts/DMSans_18pt-Regular.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e9e4; /* Fundo da página */
+    color: #333;
+    margin: 0;
+}
+
+.blog-content-container {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #f3e9e4;
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-content-container .container h1 {
+    font-family: 'ChauPhilomene', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 3px solid #a32b00; /* Linha superior */
+    padding-top: 20px;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    font-family: 'DMSans', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 15px;
+}

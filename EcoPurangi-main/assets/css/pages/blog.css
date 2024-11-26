@@ -1,0 +1,102 @@
+@import '../pages/partials/logo.css';
+@import '../pages/partials/navbar.css';
+@import '../pages/partials/header.css';
+
+@font-face {
+    font-family: 'Marykate';
+    src: url(../../fonts/Marykate-Regular.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container-blog {
+    display: grid;
+    justify-items: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.container-blog h1 {
+    font-size: 80px;
+    font-family: 'Marykate', sans-serif;
+    color: #a32b00;
+    text-align: right;
+    margin: 0;
+}
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 150px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-post img {
+    height: 100%;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.blog-content {
+    flex: 1;
+}
+
+.blog-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.blog-excerpt {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #a32b00;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.read-more span {
+    margin-left: 5px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover span {
+    transform: translateX(5px);
+}
+
+.background-image-corner {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -50px;
+    margin-bottom: -50px;
+}
+
+.background-image-corner-2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-left: -50px;
+}

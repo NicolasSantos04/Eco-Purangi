@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffeeee, #ffffff);
+            /* Background gradient */
+            color: #830202;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+        }
+
+        .container {
+            width: 65%;
+            max-width: 800px;
+            margin-left: 350px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        h1 {
+            color: #d9534f;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left,
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .left {
+            width: 45%;
+        }
+
+        .right {
+            width: 45%;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            padding: 12px;
+            border: none;
+            /* Remove border */
+            border-radius: 30px;
+            /* Rounded corners */
+            font-size: 16px;
+            background: rgba(141, 213, 255, 0.2);
+            /* Semi-transparent background */
+            margin: 5px 0;
+            color: rgba(63, 63, 63, 0.562);
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: auto;
+            border: 2px solid #d9534f;
+            /* Red border */
+            accent-color: #d9534f;
+            /* Red check mark */
+        }
+
+        .checkbox-container label {
+            font-size: 14px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button-container button {
+            padding: 12px;
+            border: none;
+            border-radius: 30px;
+            /* Rounded corners */
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            /* Add transition for animation */
+        }
+
+        .button-container .signup {
+            background-color: #d9534f;
+            color: #fff;
+        }
+
+        .button-container .login {
+            background-color: #5bc0de;
+            color: #fff;
+        }
+
+        /* Hover effects for buttons */
+        .button-container .signup:hover {
+            background-color: #c9302c;
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+        }
+
+        .button-container .login:hover {
+            background-color: #46b8da;
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+        }
+
+        .back {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .decorative-elements {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .decorative-elements img {
+            width: 50px;
+            height: auto;
+        }
+
+        .back5 {
+            position: fixed;
+            /* Fixa o botão na tela */
+            bottom: 10px;
+            /* Posiciona na parte inferior */
+            left: 10px;
+            /* Posiciona na parte esquerda */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #fff7f7;
+            color: #000000;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back5 {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Create New Account</h1>
+        <h2>Already Registered? Login</h2>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <form>
+                <div class="left">
+                    <div class="input-container">
+                        <label for="nome">Please enter your name</label>
+                        <input type="text" id="nome" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Please enter your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="senha">Please enter your password</label>
+                        <input type="password" id="senha" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="input-container">
+                        <label for="data">Please enter your date of birth</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I accept the <a href="#">terms and conditions</a></label>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="signup">Sign Up</button>
+                        <button type="button" class="login">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<footer class="back5">
+    <a href="menu.html" target="_blank" rel="prev">← back</a> <!-- Link para voltar ao menu em uma nova aba -->
+</footer>
+
+</html>

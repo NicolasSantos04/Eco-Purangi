@@ -1,0 +1,105 @@
+/* Definindo as fontes */
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../../fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Marykate';
+    src: url(../../../fonts/Marykate-Regular.ttf);
+}
+
+/* Estilos gerais da classe .principal */
+.principal {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 50px 0 0 0;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+/* Estilo para o texto "Technology, Fashion & Beauty" */
+.texto-technology {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Estilo para o título (eco + purangi) */
+.content-title {
+    display: flex;
+    flex-direction: column;  /* Empilha o título (eco + purangi) verticalmente */
+    justify-content: center;  /* Centraliza o conteúdo verticalmente */
+    width: 320px;
+}
+
+/* Estilos para as palavras "eco" e "purangi" */
+.eco, .purangi {
+    font-family: 'Marykate', sans-serif;
+    font-size: 100px;
+    margin-top: 60px;
+}
+
+.eco {
+    color: #4a2135;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.purangi {
+    color: #c2681e;
+    margin: 0;
+}
+
+/* Estilo da seção hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do container das imagens no geral */
+.images-container {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    gap: 25px;
+}
+
+/* Estilo do container das imagens na seção hero */
+.hero-images-container {
+    max-width: 500px;
+    float: left;
+    margin-left: 400px;
+    margin-top: -254px;
+}
+
+/* Deixa as imagens lado a lado */
+.hero-images-container figure {
+    margin: 0;
+    display: inline-block;
+}
+
+.hero-images-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;  /* Ajusta as imagens sem distorcer */
+}
+
+/* Estilo para o texto abaixo das imagens */
+.hero-subtitulo {
+    text-align: center;  /* Centraliza o texto abaixo das imagens */
+    margin-top: 10px;  /* Ajusta o espaçamento entre as imagens e o texto */
+    color: #4a2135;
+    font-size: 24px;
+}
+
+/* Estilo para o container do botão */
+.botao-container {
+    display: flex;
+    justify-content: center;
+}

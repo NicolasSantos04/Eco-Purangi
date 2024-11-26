@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Purangi</title>
+    <link rel="stylesheet" href="./assets/css/pages/index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f1;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .clothes-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .clothes-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .clothes-item:hover {
+            transform: scale(1.05);
+        }
+        .clothes-item img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        .clothes-item img:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        .clothes-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0 20px; /* Add bottom margin */
+            transition: margin 0.2s;
+        }
+        .clothes-item img:hover + h3 {
+            margin-top: 20px; /* Increase top margin when image is hovered */
+        }
+        .clothes-item p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .buy-button:hover {
+            background-color: brown;
+        }
+        .buy-button {
+            background-color: rgb(136, 34, 34);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="menu-container">
+    <nav style="text-transform: uppercase;"> <!-- Estiliza o texto do menu de navegação em maiúsculas -->
+    <div class="logotipo">
+        <span class="logo">Hey, come closer to see more and let's change the world together!</span> <!-- Texto de boas-vindas/logotipo -->
+    </div>
+<div class="item-container">
+        <ul class="menu"> <!-- Lista de navegação -->
+            <li><a href="#"><i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i></a></li>
+            <li><a href="index.html">Home</a></li> <!-- Link to "home" -->
+            <li><a href="buy.html">Buy</a></li> <!-- Link to "buy" -->
+            <li><a href="blog.html">Blog</a></li> <!-- Link to "blog" -->
+            <li><a href="about-us.html">About Us</a></li> <!-- Link to "about us" -->
+            <li><a href="create-account.html">My Account</a></li> <!-- Link to "my account" -->
+        </ul>
+    </div>
+    </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <div class="clothes-grid">
+            <div class="clothes-item">
+                <img src="./assets/images/clothes1.jpg" alt="Strapless Tulle Blouse with Black Overlay Detail">
+                <h3>Strapless Tulle Blouse</h3>
+                <p>Strapless Tulle Blouse with Black Overlay Detail</p>
+                <p>$100.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes2.jpg" alt="Smocked blouse in viscose with frufru details and snow white interlocking">
+                <h3>Smocked Viscose Blouse</h3>
+                <p>Smocked blouse in viscose with frufru details and snow white interlocking</p>
+                <p>$120.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes3.jpg" alt="Blouse in Textured Fabric with Detailed Sleeve at the Cuff Beige">
+                <h3>Textured Fabric Blouse</h3>
+                <p>Blouse in Textured Fabric with Detailed Sleeve at the Cuff Beige</p>
+                <p>$90.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes4.jpg" alt="Green Double Breasted Tweed Blazer">
+                <h3>Double Breasted Tweed Blazer</h3>
+                <p>Green Double Breasted Tweed Blazer</p>
+                <p>$110.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes5.jpg" alt="Elongated Blazer in Roma Stitch with Inlaid Pockets Gray">
+                <h3>Elongated Roma Stitch Blazer</h3>
+                <p>Elongated Blazer in Roma Stitch with Inlaid Pockets Gray</p>
+                <p>$130.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes6.jpg" alt="Elongated Blazer in Roma Stitch with Inlaid Pockets White">
+                <h3>White Roma Stitch Blazer</h3>
+                <p>Elongated Blazer in Roma Stitch with Inlaid Pockets White</p>
+                <p>$80.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes7.jpg" alt="Elongated Blazer in Roma Stitch with Inset Pockets Moss Green">
+                <h3>Moss Green Roma Stitch Blazer</h3>
+                <p>Elongated Blazer in Roma Stitch with Inset Pockets Moss Green</p>
+                <p>$140.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes8.jpg" alt="Elongated Crepe Tailored Blazer with Gathered Sleeves Sky Blue">
+                <h3>Sky Blue Crepe Blazer</h3>
+                <p>Elongated Crepe Tailored Blazer with Gathered Sleeves Sky Blue</p>
+                <p>$150.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="clothes-item">
+                <img src="./assets/images/clothes9.jpg" alt="Elongated Blazer in Viscose and Linen Ecru Effect with Curve & Plus Size Pockets Beige">
+                <h3>Viscose and Linen Blazer</h3>
+                <p>Elongated Blazer in Viscose and Linen Ecru Effect with Curve & Plus Size Pockets Beige</p>
+                <p>$95.00</p>
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+    </div>
+</main>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha uma opção</title> <!-- Título da página, exibido na aba do navegador -->
+
+    <style>
+        /* Estilos para os botões "sell" e "buy" */
+        .sell,
+        .buy {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: brown;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Efeitos de hover para os botões "sell" e "buy" */
+        .sell:hover,
+        .buy:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background-color: rgb(138, 36, 36);
+        }
+
+        /* Estilo do container dos botões, centralizando e espaçando */
+        .botao-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Container principal, centralizando o conteúdo na tela */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Ajusta a altura para ocupar toda a tela */
+            margin-top: 50px;
+            /* Ajusta a posição dos botões */
+        }
+
+        /* Estilos básicos para o corpo e HTML */
+        body,
+        html {
+            height: 100%;
+            /* Ocupa toda a altura da janela */
+            margin: 0;
+            /* Remove margens padrão */
+            font-family: Arial, sans-serif;
+            /* Define a fonte da página */
+        }
+
+        .back1 a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header></header> <!-- Cabeçalho vazio, (precisa ser preenchido com ícone de menu) -->
+
+    <main class="main-container"> <!-- Container principal com centralização do conteúdo -->
+        <h1 style="text-transform: uppercase;">technology, fashion & beauty</h1> <!-- Título da página em maiúsculas -->
+
+        <section class="botao-container"> <!-- Seção contendo os botões "Sell" e "Buy" -->
+            <button type="button" class="sell">Sell</button> <!-- Botão "Sell" -->
+            <button type="button" class="buy">Buy</button> <!-- Botão "Buy" -->
+        </section>
+    </main>
+
+    <footer class="back1">
+        <a href="menu.html" target="_blank" rel="prev">← back</a> <!-- Link para voltar ao menu em uma nova aba -->
+    </footer>
+</body>
+
+</html>

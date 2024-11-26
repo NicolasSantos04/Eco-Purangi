@@ -1,0 +1,206 @@
+@import '../pages/partials/logo.css';
+@import '../pages/partials/navbar.css';
+@import '../pages/partials/header.css';
+
+@font-face {
+    font-family: 'DMSans';
+    src: url(../../fonts/DMSans_18pt-Regular.ttf);
+}
+
+body {
+    background: #f3e9e4;
+    margin: 0;
+}
+
+.main-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    width: 900px;
+    padding: 18px;
+    position: relative;
+}
+
+.register-text {
+    color: #d9534f;
+    text-align: center;
+    font-family: 'DmSans', sans-serif;
+}
+
+.register-text h1 {
+    font-weight: bold;
+}
+
+.register-text h2 {
+    font-weight: lighter;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 45%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding: 12px;
+    border: none;
+    /* Remove border */
+    border-radius: 30px;
+    /* Rounded corners */
+    font-size: 16px;
+    background: rgba(141, 213, 255, 0.2);
+    /* Semi-transparent background */
+    margin: 5px 0;
+    color: rgba(63, 63, 63, 0.562);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: auto;
+    border: 2px solid #d9534f;
+    /* Red border */
+    accent-color: #d9534f;
+    /* Red check mark */
+}
+
+.checkbox-container label {
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Add transition for animation */
+}
+
+.button-container .signup {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.button-container .login {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+/* Hover effects for buttons */
+.button-container .signup:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.button-container .login:hover {
+    background-color: #46b8da;
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.back {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.decorative-elements {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.decorative-elements img {
+    width: 50px;
+    height: auto;
+}
+
+.img-corner-1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    margin-bottom: -30px;
+    margin-left: -45px;
+}
+
+.img-corner-1 img {
+    width: 220px;
+}
+
+.img-corner-2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    margin-right: 95px;
+    z-index: -1;
+}
+
+.img-corner-2 img {
+    width: 220px;
+}
+
+.img-corner-3 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    margin-right: 125px;
+}
+
+.img-corner-3 img {
+    width: 220px;
+}

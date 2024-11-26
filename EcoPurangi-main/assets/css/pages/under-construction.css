@@ -1,0 +1,43 @@
+@import '../pages/partials/logo.css';
+@import '../pages/partials/navbar.css';
+@import '../pages/partials/header.css';
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f1;
+    margin: 0;
+}
+
+
+/* Estilo da div .container */
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza a div .content horizontalmente */
+    align-items: center;     /* Centraliza a div .content verticalmente */
+    height: 70vh;            /* Faz com que a div container ocupe 80% da altura da tela */
+}
+
+/* Estiliza a div .content dentro da .container */
+.content {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;             /* Largura responsiva */
+    max-width: 600px;       /* Largura máxima */
+}
+
+/* Estilo do título */
+h1 {
+    color: #FF6347; /* Tomato color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do parágrafo */
+p {
+    color: #555;
+    font-size: 18px;
+}
